@@ -7,7 +7,7 @@ import Chapter from './pages/Chapter';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/AI-Tutorial">
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <Header />
         <main className="flex-grow">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Zap, Book, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ChapterCard from '../components/ChapterCard';
 import { chapters } from '../data/chapters';
 
@@ -17,13 +18,13 @@ const Home: React.FC = () => {
               从零开始，轻松学习AI工具使用方法，让AI成为你的得力助手
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="/chapter/1" 
+              <Link 
+                to="/chapter/1" 
                 className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
               >
                 开始学习
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
