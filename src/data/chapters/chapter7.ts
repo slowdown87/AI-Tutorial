@@ -14,7 +14,7 @@ export const chapter7: Chapter = {
 
 提示词工程是设计和优化与AI模型交互的提示词，以获得更准确、更有用的输出。了解提示词工程的原理可以帮助你设计更有效的提示词。
 
-![提示词工程原理示意图](/AI-Tutorial/images/chapter7_img1.png)
+![提示词工程原理示意图](/images/chapter7_img1.png)
 
 ### 提示词的基本结构
 
@@ -68,7 +68,7 @@ export const chapter7: Chapter = {
 - **任务适应**：根据不同任务的要求调整提示词
 - **场景适应**：根据具体场景调整提示词
 
-![提示词结构示意图](/AI-Tutorial/images/chapter7_img2.png)
+![提示词结构示意图](/images/chapter7_img2.png)
 
 ### 提示词工程的心理学基础
 
@@ -134,7 +134,7 @@ export const chapter7: Chapter = {
 
 设计有效的提示词需要遵循一定的结构和规范。本节将介绍基础提示词的结构和设计方法。
 
-![基础提示词结构示意图](/AI-Tutorial/images/chapter7_img3.png)
+![基础提示词结构示意图](/images/chapter7_img3.png)
 
 ### 标准提示词结构
 
@@ -199,7 +199,7 @@ export const chapter7: Chapter = {
 > 你是一位专业的市场分析专家。请分析以下产品的市场前景：智能手环。
 > 要求：从市场需求、竞争情况、发展趋势等方面进行分析。
 
-![不同类型提示词结构示意图](/AI-Tutorial/images/chapter7_img4.png)
+![不同类型提示词结构示意图](/images/chapter7_img4.png)
 
 ### 提示词长度和复杂度
 
@@ -259,7 +259,7 @@ export const chapter7: Chapter = {
 
 掌握高级提示技巧可以帮助你更有效地与AI模型交互，获得更优质的输出。本节将介绍一些高级提示技巧。
 
-![高级提示技巧示意图](/AI-Tutorial/images/chapter7_img5.png)
+![高级提示技巧示意图](/images/chapter7_img5.png)
 
 ### 1. 角色扮演
 
@@ -368,7 +368,7 @@ export const chapter7: Chapter = {
 > 请翻译：
 > 中文：我喜欢人工智能。
 
-![高级提示技巧应用示意图](/AI-Tutorial/images/chapter7_img6.png)
+![高级提示技巧应用示意图](/images/chapter7_img6.png)
 
 ### 6. 元提示（Meta Prompt）
 
@@ -454,7 +454,7 @@ export const chapter7: Chapter = {
 
 不同领域的任务需要不同的提示策略。本节将介绍一些常见领域的特定提示技巧。
 
-![领域特定提示示意图](/AI-Tutorial/images/chapter7_img7.png)
+![领域特定提示示意图](/images/chapter7_img7.png)
 
 ### 1. 学术研究领域
 
@@ -571,7 +571,7 @@ export const chapter7: Chapter = {
 > 3. 采用生动有趣的教学方法
 > 4. 帮助学生理解二次函数的实际应用
 
-![领域特定提示应用示意图](/AI-Tutorial/images/chapter7_img8.png)
+![领域特定提示应用示意图](/images/chapter7_img8.png)
 
 ### 6. 法律咨询领域
 
@@ -658,7 +658,7 @@ export const chapter7: Chapter = {
 
 创建高效的提示词模板可以帮助你更快速、更一致地与AI模型交互。本节将介绍如何创建和使用提示词模板。
 
-![提示词模板示意图](/AI-Tutorial/images/chapter7_img9.png)
+![提示词模板示意图](/images/chapter7_img9.png)
 
 ### 提示词模板的优势
 
@@ -802,7 +802,7 @@ export const chapter7: Chapter = {
 - 特殊要求：\${special_requirements}
 '''
 
-![提示词模板使用示意图](/AI-Tutorial/images/chapter7_img10.png)
+![提示词模板使用示意图](/images/chapter7_img10.png)
 
 ### 提示词模板的使用技巧
 

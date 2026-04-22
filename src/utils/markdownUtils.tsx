@@ -44,21 +44,21 @@ export const parseMarkdown = (content: string): React.ReactNode => {
       codeBlockContent += line + '\n';
     } else {
       // 图片
-      const imgMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
-      if (imgMatch) {
-        const alt = imgMatch[1];
-        const src = imgMatch[2];
-        elements.push(
-          <div key={i} className="my-6">
-            <img 
-              src={src} 
-              alt={alt} 
-              className="w-full h-auto rounded-lg shadow-sm"
-            />
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 text-center">{alt}</p>
-          </div>
-        );
-      }
+        const imgMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
+        if (imgMatch) {
+          const alt = imgMatch[1];
+          const src = imgMatch[2];
+          elements.push(
+            <div key={`img-${src}-${i}`} className="my-6">
+              <img 
+                src={src} 
+                alt={alt} 
+                className="w-full h-auto rounded-lg shadow-sm"
+              />
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 text-center">{alt}</p>
+            </div>
+          );
+        }
       
       // 标题
       else if (line.startsWith('## ')) {

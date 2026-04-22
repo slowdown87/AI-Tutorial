@@ -14,7 +14,7 @@ export const chapter4: Chapter = {
 
 图像生成AI是一种能够根据文字描述创建图像的人工智能技术。它可以将你的创意想法转化为视觉内容，为你的创作提供强大支持。
 
-![图像生成AI示意图](/AI-Tutorial/images/chapter4_img1.png)
+![图像生成AI示意图](/images/chapter4_img1.png)
 
 ### 图像生成的基本原理
 
@@ -32,7 +32,7 @@ export const chapter4: Chapter = {
 - **参数优化**：不断调整模型参数以提高生成质量
 - **评估改进**：通过人工和自动评估改进模型
 
-![扩散模型原理示意图](/AI-Tutorial/images/chapter4_img2.png)
+![扩散模型原理示意图](/images/chapter4_img2.png)
 
 ### 图像生成的能力
 
@@ -72,7 +72,7 @@ export const chapter4: Chapter = {
 - **礼物制作**：创建个性化礼物
 - **家居装饰**：设计家居装饰图案
 
-![图像生成应用场景示意图](/AI-Tutorial/images/chapter4_img3.png)
+![图像生成应用场景示意图](/images/chapter4_img3.png)
 
 ---
 
@@ -112,7 +112,7 @@ export const chapter4: Chapter = {
 
 现在有很多优秀的图像生成工具，各有特色。了解它们的特点可以帮助你选择最适合自己的工具。
 
-![主流图像生成工具比较](/AI-Tutorial/images/chapter4_img4.png)
+![主流图像生成工具比较](/images/chapter4_img4.png)
 
 ### DALL·E 3（OpenAI）
 
@@ -228,7 +228,7 @@ Adobe Firefly是Adobe开发的图像生成工具。
 
 选择图像生成工具时可以考虑以下几个方面。
 
-![图像生成工具选择指南](/AI-Tutorial/images/chapter4_img5.png)
+![图像生成工具选择指南](/images/chapter4_img5.png)
 
 #### 考虑因素
 - **使用目的**：个人创作还是商业用途
@@ -287,7 +287,7 @@ Adobe Firefly是Adobe开发的图像生成工具。
 
 提示词是图像生成的关键，好的提示词可以大幅提高生成图像的质量和符合度。
 
-![提示词工程示意图](/AI-Tutorial/images/chapter4_img6.png)
+![提示词工程示意图](/images/chapter4_img6.png)
 
 ### 提示词的基本结构
 
@@ -328,7 +328,7 @@ Adobe Firefly是Adobe开发的图像生成工具。
 - **协调元素**：元素之间风格要协调
 - **明确风格**：明确指定想要的风格
 
-![有效提示词示例](/AI-Tutorial/images/chapter4_img7.png)
+![有效提示词示例](/images/chapter4_img7.png)
 
 ### 提示词示例分析
 
@@ -424,7 +424,7 @@ Adobe Firefly是Adobe开发的图像生成工具。
 
 现在让我们通过一个实际的例子，学习如何使用图像生成工具创建你的第一张AI图像。
 
-![图像生成实践示意图](/AI-Tutorial/images/chapter4_img8.png)
+![图像生成实践示意图](/images/chapter4_img8.png)
 
 ### 选择工具
 
@@ -572,7 +572,7 @@ Adobe Firefly是Adobe开发的图像生成工具。
 
 掌握一些高级技巧可以帮助你生成更高质量、更符合预期的图像。
 
-![图像生成高级技巧示意图](/AI-Tutorial/images/chapter4_img9.png)
+![图像生成高级技巧示意图](/images/chapter4_img9.png)
 
 ### 高级提示词技巧
 
@@ -618,7 +618,7 @@ Adobe Firefly是Adobe开发的图像生成工具。
 - **景深效果**：控制景深和模糊效果
 - **画面平衡**：调整画面的平衡和构图
 
-![风格控制示意图](/AI-Tutorial/images/chapter4_img10.png)
+![风格控制示意图](/images/chapter4_img10.png)
 
 ### 专业领域应用
 

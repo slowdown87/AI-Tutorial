@@ -26,6 +26,9 @@ for chapter_file in os.listdir(chapters_dir):
         # 查找所有图片链接
         matches = re.findall(image_pattern, content)
         
+        # 收集所有需要替换的内容
+        replacements = []
+        
         for i, (alt_text, url) in enumerate(matches):
             # 从URL中提取提示词并生成文件名
             prompt_match = re.search(r'prompt=(.*?)&image_size', url)
@@ -47,15 +50,19 @@ for chapter_file in os.listdir(chapters_dir):
                             img_file.write(chunk)
                     print(f'图片下载成功: {filename}')
                     
-                    # 更新文件中的链接
+                    # 收集替换内容
                     local_url = f"/images/{filename}"
                     old_link = f"![{alt_text}]({url})"
                     new_link = f"![{alt_text}]({local_url})"
-                    content = content.replace(old_link, new_link)
-                    print(f'更新链接为: {local_url}')
+                    replacements.append((old_link, new_link))
+                    print(f'准备更新链接: {local_url}')
                     
                 except Exception as e:
                     print(f'下载图片失败: {e}')
+        
+        # 执行替换
+        for old_link, new_link in replacements:
+            content = content.replace(old_link, new_link)
         
         # 写回更新后的内容
         with open(file_path, 'w', encoding='utf-8') as f:
