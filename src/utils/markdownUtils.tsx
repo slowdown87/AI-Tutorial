@@ -1,4 +1,5 @@
 import React from 'react';
+import CodeEditor from '../components/CodeEditor';
 
 /**
  * 解析Markdown内容为React元素
@@ -6,16 +7,49 @@ import React from 'react';
  * @returns React.ReactNode
  */
 export const parseMarkdown = (content: string): React.ReactNode => {
-  return content
-    .split('\n')
-    .map((line, index) => {
+  const elements: React.ReactNode[] = [];
+  const lines = content.split('\n');
+  let inCodeBlock = false;
+  let codeBlockContent = '';
+  let codeBlockLanguage = 'plaintext';
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // 代码块开始
+    if (line.startsWith('```')) {
+      if (inCodeBlock) {
+        // 代码块结束
+        elements.push(
+          <CodeEditor
+            key={i}
+            language={codeBlockLanguage}
+            code={codeBlockContent}
+          />
+        );
+        inCodeBlock = false;
+        codeBlockContent = '';
+        codeBlockLanguage = 'plaintext';
+      } else {
+        // 代码块开始
+        inCodeBlock = true;
+        // 提取语言
+        const languageMatch = line.match(/^```(\w+)/);
+        if (languageMatch) {
+          codeBlockLanguage = languageMatch[1];
+        }
+      }
+    } else if (inCodeBlock) {
+      // 在代码块内部
+      codeBlockContent += line + '\n';
+    } else {
       // 图片
       const imgMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
       if (imgMatch) {
         const alt = imgMatch[1];
         const src = imgMatch[2];
-        return (
-          <div key={index} className="my-6">
+        elements.push(
+          <div key={i} className="my-6">
             <img 
               src={src} 
               alt={alt} 
@@ -27,37 +61,39 @@ export const parseMarkdown = (content: string): React.ReactNode => {
       }
       
       // 标题
-      if (line.startsWith('## ')) {
-        return <h2 key={index} className="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-8 mb-4">{line.slice(3)}</h2>;
-      }
-      if (line.startsWith('### ')) {
-        return <h3 key={index} className="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-3">{line.slice(4)}</h3>;
-      }
-      if (line.startsWith('#### ')) {
-        return <h4 key={index} className="text-lg font-semibold text-gray-700 dark:text-gray-300 mt-4 mb-2">{line.slice(5)}</h4>;
+      else if (line.startsWith('## ')) {
+        elements.push(<h2 key={i} className="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-8 mb-4">{line.slice(3)}</h2>);
+      } else if (line.startsWith('### ')) {
+        elements.push(<h3 key={i} className="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-3">{line.slice(4)}</h3>);
+      } else if (line.startsWith('#### ')) {
+        elements.push(<h4 key={i} className="text-lg font-semibold text-gray-700 dark:text-gray-300 mt-4 mb-2">{line.slice(5)}</h4>);
       }
       
       // 列表项
-      if (line.trim().startsWith('- ') || line.trim().startsWith('* ')) {
-        return <li key={index} className="ml-6 mb-2 text-gray-700 dark:text-gray-300">{line.trim().slice(2)}</li>;
-      }
-      if (line.match(/^\d+\.\s/)) {
-        return <li key={index} className="ml-6 mb-2 text-gray-700 dark:text-gray-300 list-decimal">{line.trim().replace(/^\d+\.\s/, '')}</li>;
+      else if (line.trim().startsWith('- ') || line.trim().startsWith('* ')) {
+        elements.push(<li key={i} className="ml-6 mb-2 text-gray-700 dark:text-gray-300">{line.trim().slice(2)}</li>);
+      } else if (line.match(/^\d+\.\s/)) {
+        elements.push(<li key={i} className="ml-6 mb-2 text-gray-700 dark:text-gray-300 list-decimal">{line.trim().replace(/^\d+\.\s/, '')}</li>);
       }
       
       // 分隔线
-      if (line.trim() === '---') {
-        return <hr key={index} className="my-8 border-gray-200 dark:border-gray-700" />;
+      else if (line.trim() === '---') {
+        elements.push(<hr key={i} className="my-8 border-gray-200 dark:border-gray-700" />);
       }
       
       // 空行
-      if (!line.trim()) {
-        return <br key={index} />;
+      else if (!line.trim()) {
+        elements.push(<br key={i} />);
       }
       
       // 普通段落
-      return <p key={index} className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">{line}</p>;
-    });
+      else {
+        elements.push(<p key={i} className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">{line}</p>);
+      }
+    }
+  }
+
+  return elements;
 };
 
 /**
