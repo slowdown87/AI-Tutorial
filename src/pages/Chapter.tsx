@@ -12,6 +12,7 @@ import {
   ChevronUp
 } from 'lucide-react';
 import { chapters, getChapterById } from '../data/chapters';
+import ContentManager from '../components/ContentManager';
 
 const Chapter: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -75,61 +76,7 @@ const Chapter: React.FC = () => {
     }
   };
   
-  // 简单的Markdown解析
-  const renderContent = (content: string) => {
-    return content
-      .split('\n')
-      .map((line, index) => {
-        // 图片
-        const imgMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
-        if (imgMatch) {
-          const alt = imgMatch[1];
-          const src = imgMatch[2];
-          return (
-            <div key={index} className="my-6">
-              <img 
-                src={src} 
-                alt={alt} 
-                className="w-full h-auto rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-gray-500 mt-2 text-center">{alt}</p>
-            </div>
-          );
-        }
-        
-        // 标题
-        if (line.startsWith('## ')) {
-          return <h2 key={index} className="text-2xl font-bold text-gray-900 mt-8 mb-4">{line.slice(3)}</h2>;
-        }
-        if (line.startsWith('### ')) {
-          return <h3 key={index} className="text-xl font-semibold text-gray-800 mt-6 mb-3">{line.slice(4)}</h3>;
-        }
-        if (line.startsWith('#### ')) {
-          return <h4 key={index} className="text-lg font-semibold text-gray-700 mt-4 mb-2">{line.slice(5)}</h4>;
-        }
-        
-        // 列表项
-        if (line.trim().startsWith('- ') || line.trim().startsWith('* ')) {
-          return <li key={index} className="ml-6 mb-2 text-gray-700">{line.trim().slice(2)}</li>;
-        }
-        if (line.match(/^\d+\.\s/)) {
-          return <li key={index} className="ml-6 mb-2 text-gray-700 list-decimal">{line.trim().replace(/^\d+\.\s/, '')}</li>;
-        }
-        
-        // 分隔线
-        if (line.trim() === '---') {
-          return <hr key={index} className="my-8 border-gray-200" />;
-        }
-        
-        // 空行
-        if (!line.trim()) {
-          return <br key={index} />;
-        }
-        
-        // 普通段落
-        return <p key={index} className="mb-4 text-gray-700 leading-relaxed">{line}</p>;
-      });
-  };
+  // 使用ContentManager组件渲染内容
   
   return (
     <div className="min-h-screen bg-gray-50">
@@ -277,14 +224,12 @@ const Chapter: React.FC = () => {
           </div>
           
           <article className="bg-white rounded-xl shadow-sm p-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">{currentSection.title}</h1>
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">{currentSection.title}</h1>
             
-            <div className="prose prose-gray max-w-none">
-              {renderContent(currentSection.content)}
-            </div>
+            <ContentManager content={currentSection.content} />
             
             {/* Navigation */}
-            <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
+            <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
               <button
                 onClick={handlePrev}
                 disabled={!hasPrev}
