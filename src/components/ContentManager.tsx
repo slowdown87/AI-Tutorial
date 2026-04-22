@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { parseMarkdown, extractHeadings, generateTableOfContents } from '../utils/markdownUtils.tsx';
+import { parseMarkdown } from '../utils/markdownUtils.tsx';
 import { Edit, Save, X } from 'lucide-react';
 
 interface ContentManagerProps {
@@ -15,7 +15,6 @@ const ContentManager: React.FC<ContentManagerProps> = ({
 }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedContent, setEditedContent] = useState(content);
-  const headings = extractHeadings(content);
 
   const handleSave = () => {
     if (onContentChange) {
@@ -30,16 +29,9 @@ const ContentManager: React.FC<ContentManagerProps> = ({
   };
 
   return (
-    <div className="space-y-6">
-      {/* 目录 */}
-      {headings.length > 0 && (
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4">
-          {generateTableOfContents(headings)}
-        </div>
-      )}
-
+    <div>
       {/* 内容 */}
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6">
+      <div>
         {isEditing ? (
           <div className="space-y-4">
             <textarea
