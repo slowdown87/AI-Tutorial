@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SkipLink from './components/SkipLink';
 import Home from './pages/Home';
 import { ThemeProvider } from './contexts/ThemeContext';
 
@@ -21,8 +22,9 @@ const App: React.FC = () => {
     <ThemeProvider>
       <Router basename="/AI-Tutorial">
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
+          <SkipLink />
           <Header />
-          <main className="flex-grow">
+          <main id="main-content" className="flex-grow">
             <Suspense fallback={<Loading />}>
             <Routes>
               <Route path="/" element={<Home />} />

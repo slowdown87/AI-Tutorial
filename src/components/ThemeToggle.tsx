@@ -8,13 +8,21 @@ const ThemeToggle: React.FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-      aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleTheme();
+        }
+      }}
+      className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
+      aria-label={isDarkMode ? '切换到浅色模式' : '切换到深色模式'}
+      role="switch"
+      aria-checked={isDarkMode}
     >
       {isDarkMode ? (
-        <Sun className="h-5 w-5 text-gray-200" />
+        <Sun className="h-5 w-5 text-gray-200" aria-hidden="true" />
       ) : (
-        <Moon className="h-5 w-5 text-gray-700" />
+        <Moon className="h-5 w-5 text-gray-700" aria-hidden="true" />
       )}
     </button>
   );
