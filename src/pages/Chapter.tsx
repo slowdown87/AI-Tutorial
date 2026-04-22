@@ -173,6 +173,36 @@ const Chapter: React.FC = () => {
               ))}
             </nav>
             
+            {/* 小节目录 */}
+            <div className="mt-6">
+              <h4 className="text-md font-semibold text-gray-900 mb-3">小节目录</h4>
+              <nav className="space-y-1 pl-2">
+                {chapter.sections.map((section, index) => (
+                  <button
+                    key={section.id}
+                    onClick={() => {
+                      setCurrentSectionIndex(index);
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                      index === currentSectionIndex
+                        ? 'bg-primary-100 text-primary-700 font-medium'
+                        : 'text-gray-600 hover:bg-gray-100'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      {index < currentSectionIndex ? (
+                        <CheckCircle2 className="h-4 w-4 mr-2 text-success-500 flex-shrink-0" />
+                      ) : (
+                        <span className="h-2 w-2 rounded-full bg-gray-300 mr-3 flex-shrink-0" />
+                      )}
+                      {section.title}
+                    </div>
+                  </button>
+                ))}
+              </nav>
+            </div>
+            
             <div className="mt-8 pt-6 border-t border-gray-200">
               <Link
                 to="/"
