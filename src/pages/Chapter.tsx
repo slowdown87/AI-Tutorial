@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { chapters, getChapterById } from '../data/chapters';
 import ContentManager from '../components/ContentManager';
+import { useTranslation } from 'react-i18next';
 
 const Chapter: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -20,6 +21,7 @@ const Chapter: React.FC = () => {
   const navigate = useNavigate();
   const chapterId = parseInt(id || '1');
   const chapter = getChapterById(chapterId);
+  const { t } = useTranslation();
   
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -110,7 +112,7 @@ const Chapter: React.FC = () => {
           )}
           
           <div className="lg:sticky lg:top-24">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">章节目录</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">{t('common.home')}</h3>
             <nav className="space-y-1">
               {chapters.map((ch) => (
                 <button
@@ -136,7 +138,7 @@ const Chapter: React.FC = () => {
             
             {/* 小节目录 */}
             <div className="mt-6">
-              <h4 className="text-md font-semibold text-gray-900 mb-3">小节目录</h4>
+              <h4 className="text-md font-semibold text-gray-900 dark:text-white mb-3">{t('chapter.toc')}</h4>
               <nav className="space-y-1 pl-2">
                 {chapter.sections.map((section, index) => (
                   <button
@@ -164,13 +166,13 @@ const Chapter: React.FC = () => {
               </nav>
             </div>
             
-            <div className="mt-8 pt-6 border-t border-gray-200">
+            <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
               <Link
                 to="/"
-                className="flex items-center text-gray-600 hover:text-primary-600 text-sm"
+                className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm"
               >
                 <Home className="h-4 w-4 mr-2" />
-                返回首页
+                {t('chapter.backHome')}
               </Link>
             </div>
           </div>
@@ -186,7 +188,7 @@ const Chapter: React.FC = () => {
             >
               <div className="flex items-center">
                 <BookOpen className="h-5 w-5 mr-2 text-primary-600" />
-                <span className="font-semibold text-gray-900">小节目录</span>
+                <span className="font-semibold text-gray-900 dark:text-white">{t('chapter.toc')}</span>
               </div>
               {mobileTableOfContentsOpen ? (
                 <ChevronUp className="h-5 w-5 text-gray-500" />
@@ -235,12 +237,12 @@ const Chapter: React.FC = () => {
                 disabled={!hasPrev}
                 className={`flex items-center px-4 py-2 rounded-lg ${
                   hasPrev
-                    ? 'text-primary-600 hover:bg-primary-50'
+                    ? 'text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-800'
                     : 'text-gray-400 cursor-not-allowed'
                 }`}
               >
                 <ChevronLeft className="h-5 w-5 mr-2" />
-                上一节
+                {t('chapter.previous')}
               </button>
               
               <button
@@ -252,7 +254,7 @@ const Chapter: React.FC = () => {
                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }`}
               >
-                {isLastSection && !isLastChapter ? '下一章' : '下一节'}
+                {isLastSection && !isLastChapter ? t('chapter.nextChapter') : t('chapter.next')}
                 <ChevronRight className="h-5 w-5 ml-2" />
               </button>
             </div>

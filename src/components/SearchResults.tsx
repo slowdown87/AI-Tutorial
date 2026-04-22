@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpen, SearchX } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface SearchResult {
   chapterId: number;
@@ -19,6 +20,8 @@ interface SearchResultsProps {
 }
 
 const SearchResults: React.FC<SearchResultsProps> = ({ results, query, onClear }) => {
+  const { t } = useTranslation();
+  
   if (!query) {
     return null;
   }
@@ -27,21 +30,21 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, query, onClear }
     <div className="mt-4">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          搜索结果: {results.length} 个匹配
+          {t('common.results')}: {results.length} 个匹配
         </h3>
         <button
           onClick={onClear}
           className="flex items-center text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
         >
           <SearchX className="h-4 w-4 mr-1" />
-          清除搜索
+          {t('common.clearSearch')}
         </button>
       </div>
 
       {results.length === 0 ? (
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 text-center">
           <p className="text-gray-600 dark:text-gray-400">
-            没有找到与 "{query}" 相关的内容
+            {t('common.noResults')} "{query}"
           </p>
         </div>
       ) : (

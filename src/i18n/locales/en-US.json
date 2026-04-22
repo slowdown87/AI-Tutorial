@@ -1,0 +1,45 @@
+{
+  "common": {
+    "home": "Home",
+    "startLearning": "Start Learning",
+    "search": "Search",
+    "searchPlaceholder": "Search tutorial...",
+    "noResults": "No results found",
+    "results": "Search Results",
+    "clearSearch": "Clear Search",
+    "loading": "Loading..."
+  },
+  "hero": {
+    "title": "AI Tutorial for Beginners",
+    "subtitle": "Start from scratch, easily learn how to use AI tools, and make AI your powerful assistant",
+    "startButton": "Start Learning"
+  },
+  "steps": {
+    "title": "Three-Step Learning",
+    "step1": "Understand the Basics",
+    "step1Desc": "Learn what AI is and what it can do",
+    "step2": "Hands-on Practice",
+    "step2Desc": "Follow the tutorial and practice step by step",
+    "step3": "Flexible Application",
+    "step3Desc": "Apply the skills you've learned to real-life scenarios"
+  },
+  "chapters": {
+    "title": "Tutorial Chapters",
+    "subtitle": "Start from the basics and learn AI tools循序渐进"
+  },
+  "chapter": {
+    "previous": "Previous Section",
+    "next": "Next Section",
+    "nextChapter": "Next Chapter",
+    "toc": "Section Table of Contents",
+    "backHome": "Back to Home"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  },
+  "progress": {
+    "saved": "Progress saved",
+    "complete": "Completed"
+  }
+}

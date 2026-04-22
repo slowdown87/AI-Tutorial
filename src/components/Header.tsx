@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Brain, Menu, X, Search } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import SearchBar from './SearchBar';
+import LanguageToggle from './LanguageToggle';
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,6 +37,7 @@ const Header: React.FC = () => {
             <Link to="/chapter/1" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium">
               开始学习
             </Link>
+            <LanguageToggle />
             <ThemeToggle />
           </div>
           <div className="md:hidden flex items-center">
@@ -80,6 +82,9 @@ const Header: React.FC = () => {
             >
               开始学习
             </Link>
+            <div className="px-3 py-2">
+              <LanguageToggle />
+            </div>
           </div>
         )}
       </div>
