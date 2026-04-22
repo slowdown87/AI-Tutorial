@@ -47,11 +47,7 @@ export const parseMarkdown = (content: string): React.ReactNode => {
       const imgMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
       if (imgMatch) {
         const alt = imgMatch[1];
-        let src = imgMatch[2];
-        // 添加基础路径
-        if (src.startsWith('/images/')) {
-          src = `/AI-Tutorial${src}`;
-        }
+        const src = imgMatch[2];
         elements.push(
           <div key={i} className="my-6">
             <img 
