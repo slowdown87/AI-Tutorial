@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowRight, Zap, Book, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ChapterCard from '../components/ChapterCard';
-import SearchBar from '../components/SearchBar';
 import SearchResults from '../components/SearchResults';
 import { chapters } from '../data/chapters';
 import { searchService } from '../services/searchService';
@@ -11,10 +10,16 @@ const Home: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState(searchService.search(''));
 
-  const handleSearch = (query: string) => {
-    setSearchQuery(query);
-    setSearchResults(searchService.search(query));
-  };
+  // 从localStorage读取搜索查询
+  useEffect(() => {
+    const savedQuery = localStorage.getItem('searchQuery');
+    if (savedQuery) {
+      setSearchQuery(savedQuery);
+      setSearchResults(searchService.search(savedQuery));
+      // 清除localStorage中的搜索查询
+      localStorage.removeItem('searchQuery');
+    }
+  }, []);
 
   const handleClearSearch = () => {
     setSearchQuery('');
@@ -46,22 +51,20 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Search Section */}
-      <section className="py-8 bg-white">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-center text-gray-900 mb-4">
-              搜索教程内容
-            </h2>
-            <SearchBar onSearch={handleSearch} />
-            <SearchResults 
-              results={searchResults} 
-              query={searchQuery} 
-              onClear={handleClearSearch} 
-            />
+      {/* Search Results */}
+      {searchQuery && (
+        <section className="py-8 bg-white">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <SearchResults 
+                results={searchResults} 
+                query={searchQuery} 
+                onClear={handleClearSearch} 
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Quick Start Guide */}
       <section className="py-16">

@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Brain, Menu, X } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Brain, Menu, X, Search } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import SearchBar from './SearchBar';
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSearch = (query: string) => {
+    if (query) {
+      // 导航到首页并显示搜索结果
+      navigate('/');
+      // 这里可以通过localStorage或其他方式传递搜索查询
+      localStorage.setItem('searchQuery', query);
+    }
+  };
 
   return (
     <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-10">
@@ -14,7 +26,10 @@ const Header: React.FC = () => {
             <Brain className="h-8 w-8 text-primary-600" />
             <span className="text-xl font-bold text-gray-900 dark:text-white">AI零基础教程</span>
           </Link>
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="w-64">
+              <SearchBar onSearch={handleSearch} placeholder="搜索教程..." />
+            </div>
             <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium">
               首页
             </Link>
@@ -24,6 +39,13 @@ const Header: React.FC = () => {
             <ThemeToggle />
           </div>
           <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setShowSearch(!showSearch)}
+              className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+              aria-label="Search"
+            >
+              <Search className="h-6 w-6" />
+            </button>
             <ThemeToggle />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -34,6 +56,14 @@ const Header: React.FC = () => {
             </button>
           </div>
         </div>
+        
+        {/* Mobile Search */}
+        {showSearch && (
+          <div className="md:hidden p-4 border-t border-gray-200 dark:border-gray-700">
+            <SearchBar onSearch={handleSearch} placeholder="搜索教程..." />
+          </div>
+        )}
+        
         {mobileMenuOpen && (
           <div className="md:hidden py-2 space-y-2">
             <Link
