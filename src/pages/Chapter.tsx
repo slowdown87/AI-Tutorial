@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { 
   ChevronLeft, 
   ChevronRight, 
@@ -15,6 +15,7 @@ import { chapters, getChapterById } from '../data/chapters';
 
 const Chapter: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const chapterId = parseInt(id || '1');
   const chapter = getChapterById(chapterId);
@@ -27,6 +28,19 @@ const Chapter: React.FC = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentSectionIndex, chapterId]);
+
+  // 检查URL参数中的section参数
+  useEffect(() => {
+    if (chapter) {
+      const sectionParam = searchParams.get('section');
+      if (sectionParam) {
+        const sectionIndex = chapter.sections.findIndex(section => section.id === sectionParam);
+        if (sectionIndex !== -1) {
+          setCurrentSectionIndex(sectionIndex);
+        }
+      }
+    }
+  }, [searchParams, chapter]);
   
   if (!chapter) {
     return (

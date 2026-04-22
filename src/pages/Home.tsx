@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, Zap, Book, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ChapterCard from '../components/ChapterCard';
+import SearchBar from '../components/SearchBar';
+import SearchResults from '../components/SearchResults';
 import { chapters } from '../data/chapters';
+import { searchService } from '../services/searchService';
 
 const Home: React.FC = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState(searchService.search(''));
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+    setSearchResults(searchService.search(query));
+  };
+
+  const handleClearSearch = () => {
+    setSearchQuery('');
+    setSearchResults([]);
+  };
+
   return (
     <div>
       {/* Hero Section */}
@@ -26,6 +42,23 @@ const Home: React.FC = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Search Section */}
+      <section className="py-8 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-4">
+              搜索教程内容
+            </h2>
+            <SearchBar onSearch={handleSearch} />
+            <SearchResults 
+              results={searchResults} 
+              query={searchQuery} 
+              onClear={handleClearSearch} 
+            />
           </div>
         </div>
       </section>
