@@ -37,6 +37,9 @@ const Header: React.FC = () => {
             <Link to="/chapter/1" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium">
               开始学习
             </Link>
+            <Link to="/quiz-practice" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium">
+              练习与测验
+            </Link>
             <LanguageToggle />
             <ThemeToggle />
           </div>
@@ -81,6 +84,13 @@ const Header: React.FC = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               开始学习
+            </Link>
+            <Link
+              to="/quiz-practice"
+              className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              练习与测验
             </Link>
             <div className="px-3 py-2">
               <LanguageToggle />

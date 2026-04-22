@@ -5,8 +5,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import { ThemeProvider } from './contexts/ThemeContext';
 
-// 懒加载Chapter组件
+// 懒加载组件
 const Chapter = React.lazy(() => import('./pages/Chapter'));
+const QuizPracticeExample = React.lazy(() => import('./pages/QuizPracticeExample'));
 
 // 加载状态组件
 const Loading = () => (
@@ -23,11 +24,12 @@ const App: React.FC = () => {
           <Header />
           <main className="flex-grow">
             <Suspense fallback={<Loading />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/chapter/:id" element={<Chapter />} />
-              </Routes>
-            </Suspense>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/chapter/:id" element={<Chapter />} />
+              <Route path="/quiz-practice" element={<QuizPracticeExample />} />
+            </Routes>
+          </Suspense>
           </main>
           <Footer />
         </div>
