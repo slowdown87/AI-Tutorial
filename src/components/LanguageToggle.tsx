@@ -25,6 +25,7 @@ const LanguageToggle: React.FC = () => {
         }`}
         aria-pressed={i18n.language === 'zh-CN'}
         role="button"
+        title="切换到中文"
       >
         中文
       </button>
@@ -43,6 +44,7 @@ const LanguageToggle: React.FC = () => {
         }`}
         aria-pressed={i18n.language === 'en-US'}
         role="button"
+        title="切换到英文"
       >
         English
       </button>

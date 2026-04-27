@@ -18,6 +18,7 @@ const ThemeToggle: React.FC = () => {
       aria-label={isDarkMode ? '切换到浅色模式' : '切换到深色模式'}
       role="switch"
       aria-checked={isDarkMode}
+      title={isDarkMode ? '切换到浅色模式' : '切换到深色模式'}
     >
       {isDarkMode ? (
         <Sun className="h-5 w-5 text-gray-200" aria-hidden="true" />

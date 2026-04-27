@@ -31,13 +31,13 @@ const Header: React.FC = () => {
             <div className="w-64">
               <SearchBar onSearch={handleSearch} placeholder="搜索教程..." />
             </div>
-            <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md px-2 py-1">
+            <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md px-2 py-1" title="返回首页">
               首页
             </Link>
-            <Link to="/chapter/1" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md px-2 py-1">
+            <Link to="/chapter/1" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md px-2 py-1" title="开始学习AI教程">
               开始学习
             </Link>
-            <Link to="/quiz-practice" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md px-2 py-1">
+            <Link to="/quiz-practice" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md px-2 py-1" title="进行AI练习与测验">
               练习与测验
             </Link>
             <LanguageToggle />
@@ -49,6 +49,7 @@ const Header: React.FC = () => {
               className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
               aria-label="搜索"
               aria-expanded={showSearch}
+              title="搜索教程内容"
             >
               <Search className="h-6 w-6" aria-hidden="true" />
             </button>
@@ -58,6 +59,7 @@ const Header: React.FC = () => {
               className="ml-4 p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
               aria-label="打开菜单"
               aria-expanded={mobileMenuOpen}
+              title="打开移动端菜单"
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6" aria-hidden="true" />
@@ -82,6 +84,7 @@ const Header: React.FC = () => {
               to="/"
               className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md"
               onClick={() => setMobileMenuOpen(false)}
+              title="返回首页"
             >
               首页
             </Link>
@@ -89,6 +92,7 @@ const Header: React.FC = () => {
               to="/chapter/1"
               className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md"
               onClick={() => setMobileMenuOpen(false)}
+              title="开始学习AI教程"
             >
               开始学习
             </Link>
@@ -96,6 +100,7 @@ const Header: React.FC = () => {
               to="/quiz-practice"
               className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md"
               onClick={() => setMobileMenuOpen(false)}
+              title="进行AI练习与测验"
             >
               练习与测验
             </Link>
