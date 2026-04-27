@@ -14,7 +14,7 @@ export const chapter5: Chapter = {
 
 办公自动化是指使用技术手段自动完成办公室中的各种任务，提高工作效率和质量。AI技术的加入，使得办公自动化达到了新的高度。
 
-![办公自动化示意图](/images/chapter5_img1.png)
+![办公自动化示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20office%20automation%20with%20AI%20tools%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 办公自动化的核心概念
 
@@ -36,7 +36,7 @@ export const chapter5: Chapter = {
 - **特点**：端到端自动化，减少人工干预
 - **应用**：审批流程、客户服务、项目管理等
 
-![AI办公自动化示意图](/images/chapter5_img2.png)
+![AI办公自动化示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20and%20RPA%20working%20together%20for%20office%20automation%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 办公自动化的优势
 
@@ -116,7 +116,7 @@ export const chapter5: Chapter = {
 
 文档是办公中最常见的信息载体，AI工具可以帮助我们更高效地处理各种文档。
 
-![文档处理示意图](/images/chapter5_img3.png)
+![文档处理示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20document%20processing%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 文档处理的常见任务
 
@@ -158,7 +158,7 @@ export const chapter5: Chapter = {
 - **应用**：合同分析、简历筛选、表单处理
 - **优势**：处理复杂文档，提取关键信息
 
-![AI文档分析示意图](/images/chapter5_img4.png)
+![AI文档分析示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20analyzing%20documents%20and%20extracting%20information%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 文档处理最佳实践
 
@@ -218,7 +218,7 @@ export const chapter5: Chapter = {
 
 会议是办公中不可或缺的一部分，AI工具可以帮助我们更高效地管理和参与会议。
 
-![会议助手示意图](/images/chapter5_img5.png)
+![会议助手示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20meeting%20assistant%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### AI会议助手的功能
 
@@ -260,7 +260,7 @@ export const chapter5: Chapter = {
 - **应用**：会议规划、跟进管理
 - **优势**：整合会议全流程管理
 
-![AI会议记录示意图](/images/chapter5_img6.png)
+![AI会议记录示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20taking%20meeting%20notes%20and%20extracting%20action%20items%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 会议助手使用最佳实践
 
@@ -320,7 +320,7 @@ export const chapter5: Chapter = {
 
 数据分析是现代办公中的重要环节，AI工具可以帮助我们更高效地分析数据，发现 insights。
 
-![数据分析示意图](/images/chapter5_img7.png)
+![数据分析示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20data%20analysis%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### AI数据分析的优势
 
@@ -362,7 +362,7 @@ export const chapter5: Chapter = {
 - **应用**：销售分析、客户分析、运营分析
 - **优势**：针对特定领域优化，分析更精准
 
-![AI数据分析示意图](/images/chapter5_img8.png)
+![AI数据分析示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20analyzing%20data%20and%20generating%20insights%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 数据分析最佳实践
 
@@ -422,7 +422,7 @@ export const chapter5: Chapter = {
 
 现在让我们将所学的知识应用到实际工作中，优化一个具体的工作流程。
 
-![工作流程优化示意图](/images/chapter5_img9.png)
+![工作流程优化示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20workflow%20optimization%20process%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 工作流程分析
 
@@ -490,7 +490,7 @@ export const chapter5: Chapter = {
 - **数据价值**：更好地利用反馈数据
 - **客户满意度**：更快的响应速度
 
-![优化工作流程示意图](/images/chapter5_img10.png)
+![优化工作流程示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20before%20and%20after%20workflow%20optimization%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 实施步骤
 

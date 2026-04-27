@@ -14,7 +14,7 @@ export const chapter3: Chapter = {
 
 AI写作的核心在于理解大语言模型如何处理和生成文本。了解这些原理将帮助你更有效地使用AI进行写作。
 
-![AI写作原理示意图](/images/chapter3_img1.png)
+![AI写作原理示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20writing%20process%20with%20brain%20storming%2C%20drafting%2C%20and%20editing%2C%20educational%20style&image_size=landscape_16_9)
 
 ### LLM写作的基本原理
 
@@ -48,7 +48,7 @@ AI写作的核心在于理解大语言模型如何处理和生成文本。了解
 - **风格一致**：保持语言风格统一
 - **目标明确**：清楚说明预期结果
 
-![提示词结构示意图](/images/chapter3_img2.png)
+![提示词结构示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20prompt%20engineering%20structure%20with%20instruction%2C%20context%2C%20constraints%2C%20and%20examples%2C%20educational%20style&image_size=landscape_16_9)
 
 ### AI写作的优势
 
@@ -148,7 +148,7 @@ AI写作的核心在于理解大语言模型如何处理和生成文本。了解
 
 邮件是现代职场和个人沟通中最常用的工具之一。AI可以帮助你写好各种类型的邮件。
 
-![邮件写作示意图](/images/chapter3_img3.png)
+![邮件写作示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20of%20email%20writing%20with%20AI%20assistance%2C%20showing%20professional%20email%20interface%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 邮件的基本结构
 
@@ -207,7 +207,7 @@ AI写作的核心在于理解大语言模型如何处理和生成文本。了解
 - **场景**：跟进工作进展
 - **提示词**："帮我写一封跟进邮件，询问上周讨论的项目进展情况。邮件要礼貌，表达对项目的重视，同时提醒对方需要在本周五前提供更新。"
 
-![不同类型邮件示例](/images/chapter3_img4.png)
+![不同类型邮件示例](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20different%20types%20of%20emails%20like%20business%2C%20thank%20you%2C%20follow%20up%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 邮件写作的AI提示词技巧
 
@@ -296,7 +296,7 @@ AI写作的核心在于理解大语言模型如何处理和生成文本。了解
 
 报告和总结是工作中常见的文档类型。AI可以帮助你快速生成结构清晰、内容详实的报告。
 
-![报告写作示意图](/images/chapter3_img5.png)
+![报告写作示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20of%20report%20writing%20with%20AI%20assistance%2C%20showing%20professional%20report%20document%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 报告的基本结构
 
@@ -354,7 +354,7 @@ AI写作的核心在于理解大语言模型如何处理和生成文本。了解
 - **要求洞察**：要求AI提供数据洞察
 - **建议可视化**：建议适合的图表类型
 
-![数据分析示意图](/images/chapter3_img6.png)
+![数据分析示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20data%20analysis%20in%20report%20with%20charts%20and%20insights%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 报告的优化和完善
 
@@ -450,7 +450,7 @@ AI写作的核心在于理解大语言模型如何处理和生成文本。了解
 
 AI不仅可以写正式文档，还可以帮助你进行创意写作，如故事、诗歌、剧本等。
 
-![创意写作示意图](/images/chapter3_img7.png)
+![创意写作示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20of%20creative%20writing%20with%20AI%20assistance%2C%20showing%20writer%20and%20AI%20brainstorming%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 创意写作的类型
 
@@ -521,7 +521,7 @@ AI可以帮助你创作各种类型的创意内容。
 - **细节优化**：优化细节和描写
 - **最终润色**：进行最终的润色和调整
 
-![创意写作流程示意图](/images/chapter3_img8.png)
+![创意写作流程示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20creative%20writing%20process%20from%20idea%20to%20final%20draft%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 创意写作的个性化
 
@@ -610,7 +610,7 @@ AI可以帮助你创作各种类型的创意内容。
 
 AI不仅可以创作新内容，还可以帮助你改写和润色现有内容，提高内容质量。
 
-![内容润色示意图](/images/chapter3_img9.png)
+![内容润色示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20content%20editing%20and%20polishing%20with%20AI%20assistance%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 内容改写的类型
 
@@ -682,7 +682,7 @@ AI可以帮助你进行各种类型的内容改写。
 - **效果评估**：评估改写的效果
 - **最终调整**：进行最终的调整和完善
 
-![内容改写流程示意图](/images/chapter3_img10.png)
+![内容改写流程示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20content%20rewriting%20process%20from%20analysis%20to%20final%20revision%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 常见内容问题及解决
 
@@ -777,7 +777,7 @@ AI可以帮助你进行各种类型的内容改写。
 
 现在让我们通过一个完整的实践项目，综合运用前面学到的AI写作技巧，完成一份完整的内容创作任务。
 
-![内容创作实践示意图](/images/chapter3_img11.png)
+![内容创作实践示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20complete%20content%20creation%20process%20with%20AI%20assistance%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 实践项目介绍
 
@@ -852,7 +852,7 @@ AI可以帮助你进行各种类型的内容改写。
 - **排版调整**：改善文章的排版
 - **视觉元素**：添加适当的视觉元素建议
 
-![内容优化流程示意图](/images/chapter3_img12.png)
+![内容优化流程示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20content%20optimization%20process%20from%20draft%20to%20final%20version%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 第四步：最终完善
 
