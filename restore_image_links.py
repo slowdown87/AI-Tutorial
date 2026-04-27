@@ -5,7 +5,7 @@ import re
 chapters_dir = 'src/data/chapters'
 
 # 正则表达式匹配本地图片路径
-local_image_pattern = r'!\[(.*?)\]\((/AI-Tutorial/images/.*?)\)'
+local_image_pattern = r'!\[(.*?)\]\((/images/.*?)\)'
 
 # 原始API链接映射
 image_mappings = {

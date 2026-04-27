@@ -127,6 +127,7 @@ const Chapter: React.FC = () => {
                       ? 'bg-primary-100 text-primary-700 font-medium'
                       : 'text-gray-600 hover:bg-gray-100'
                   }`}
+                  title={`${ch.id}. ${ch.title}`}
                 >
                   <div className="flex items-center">
                     <span className="mr-3">{ch.id}.</span>
@@ -152,6 +153,7 @@ const Chapter: React.FC = () => {
                         ? 'bg-primary-100 text-primary-700 font-medium'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
+                    title={section.title}
                   >
                     <div className="flex items-center">
                       {index < currentSectionIndex ? (
@@ -209,6 +211,7 @@ const Chapter: React.FC = () => {
                           ? 'bg-primary-100 text-primary-700 font-medium'
                           : 'text-gray-600 hover:bg-gray-100'
                       }`}
+                      title={section.title}
                     >
                       <div className="flex items-center">
                         {index < currentSectionIndex ? (
@@ -240,6 +243,7 @@ const Chapter: React.FC = () => {
                     ? 'text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-800'
                     : 'text-gray-400 cursor-not-allowed'
                 }`}
+                title={hasPrev ? `上一节: ${chapter.sections[currentSectionIndex - 1].title}` : '没有上一节'}
               >
                 <ChevronLeft className="h-5 w-5 mr-2" />
                 {t('chapter.previous')}
@@ -253,6 +257,7 @@ const Chapter: React.FC = () => {
                     ? 'bg-primary-600 text-white hover:bg-primary-700'
                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }`}
+                title={hasNext ? `下一节: ${chapter.sections[currentSectionIndex + 1].title}` : (isLastChapter ? '没有下一章' : `下一章: ${chapters.find(c => c.id === chapterId + 1)?.title}`)}
               >
                 {isLastSection && !isLastChapter ? t('chapter.nextChapter') : t('chapter.next')}
                 <ChevronRight className="h-5 w-5 ml-2" />
