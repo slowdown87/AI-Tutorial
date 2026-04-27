@@ -14,7 +14,7 @@ export const chapter6: Chapter = {
 
 学习是人类获取知识和技能的过程，AI工具可以帮助我们优化学习过程，提高学习效率和效果。
 
-![学习原理示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20assisted%20learning%20principles%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
+![学习原理示意图](/images/chapter6_img1.png)
 
 ### 学习的基本原理
 
@@ -36,7 +36,7 @@ export const chapter6: Chapter = {
 - **特点**：自适应学习、差异化教学、个性化反馈
 - **应用**：根据学习者的学习风格、进度和偏好调整学习内容
 
-![个性化学习示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20personalized%20learning%20with%20AI%20assistance%2C%20educational%20style&image_size=landscape_16_9)
+![个性化学习示意图](/images/chapter6_img2.png)
 
 ### AI在学习中的应用原理
 
@@ -99,7 +99,7 @@ export const chapter6: Chapter = {
 
 知识获取是学习的基础，AI工具可以帮助我们更高效地获取和管理知识。
 
-![知识获取示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20assisted%20knowledge%20acquisition%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
+![知识获取示意图](/images/chapter6_img3.png)
 
 ### 传统知识获取的挑战
 
@@ -144,7 +144,7 @@ export const chapter6: Chapter = {
 - **学习路径**：推荐个性化的学习路径
 - **资源匹配**：匹配适合学习者水平的资源
 
-![智能知识获取示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20intelligent%20knowledge%20retrieval%20and%20organization%2C%20educational%20style&image_size=landscape_16_9)
+![智能知识获取示意图](/images/chapter6_img4.png)
 
 ### AI知识获取工具推荐
 
@@ -207,7 +207,7 @@ export const chapter6: Chapter = {
 
 概念理解是学习的核心，AI工具可以帮助我们更深入地理解复杂概念。
 
-![概念理解示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20assisted%20concept%20understanding%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
+![概念理解示意图](/images/chapter6_img5.png)
 
 ### 概念理解的挑战
 
@@ -252,7 +252,7 @@ export const chapter6: Chapter = {
 - **跨领域连接**：连接不同领域的相关概念
 - **概念演化**：展示概念的发展和演化过程
 
-![概念理解方法示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20methods%20for%20concept%20understanding%20like%20visualization%20and%20decomposition%2C%20educational%20style&image_size=landscape_16_9)
+![概念理解方法示意图](/images/chapter6_img6.png)
 
 ### AI概念理解工具推荐
 
@@ -315,7 +315,7 @@ export const chapter6: Chapter = {
 
 AI工具可以成为研究的强大助手，帮助研究人员更高效地进行研究工作。
 
-![研究辅助示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20assisted%20research%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
+![研究辅助示意图](/images/chapter6_img7.png)
 
 ### 研究过程的挑战
 
@@ -377,7 +377,7 @@ AI工具可以成为研究的强大助手，帮助研究人员更高效地进行
 - **语言润色**：润色和改进论文语言表达
 - **引用管理**：管理和格式化参考文献
 
-![AI研究辅助示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20assisting%20research%20process%20from%20literature%20review%20to%20paper%20writing%2C%20educational%20style&image_size=landscape_16_9)
+![AI研究辅助示意图](/images/chapter6_img8.png)
 
 ### AI研究工具推荐
 
@@ -447,7 +447,7 @@ AI工具可以成为研究的强大助手，帮助研究人员更高效地进行
 
 现在让我们将所学的知识应用到实际中，设计一个个性化的学习计划。
 
-![个性化学习计划示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20personalized%20learning%20plan%20design%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
+![个性化学习计划示意图](/images/chapter6_img9.png)
 
 ### 个性化学习计划的要素
 
@@ -552,7 +552,7 @@ AI工具可以成为研究的强大助手，帮助研究人员更高效地进行
 - **调整策略**：根据评估结果调整学习内容和方法
 - **成果展示**：创建提示词库，分享学习成果
 
-![学习计划执行示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20execution%20of%20personalized%20learning%20plan%2C%20educational%20style&image_size=landscape_16_9)
+![学习计划执行示意图](/images/chapter6_img10.png)
 
 ### 实施步骤
 
