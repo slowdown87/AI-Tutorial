@@ -14,7 +14,7 @@ export const chapter8: Chapter = {
 
 单一的AI工具虽然强大，但通过整合不同的AI工具，你可以创造出更强大的效果。本章将学习如何将不同的AI工具组合使用，发挥它们的最大价值。
 
-![AI工具整合示意图](/AI-Tutorial/images/chapter8_img1.png)
+![AI工具整合示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20integration%20of%20different%20AI%20tools%20working%20together%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 工具整合的优势
 
@@ -42,7 +42,7 @@ export const chapter8: Chapter = {
 - **多维度表达**：同一内容可以通过不同形式表达
 - **创新组合**：创造出单一工具无法实现的效果
 
-![工具整合优势示意图](/AI-Tutorial/images/chapter8_img2.png)
+![工具整合优势示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20benefits%20of%20AI%20tool%20integration%20like%20efficiency%20and%20creativity%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 常见的工具整合场景
 
@@ -106,7 +106,7 @@ export const chapter8: Chapter = {
 - **监控过程**：监控每个步骤的执行情况
 - **优化调整**：根据执行结果调整工作流
 
-![工具整合步骤示意图](/AI-Tutorial/images/chapter8_img3.png)
+![工具整合步骤示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20steps%20for%20AI%20tool%20integration%20from%20goal%20setting%20to%20execution%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 工具整合的最佳实践
 
@@ -168,7 +168,7 @@ export const chapter8: Chapter = {
 
 提示词是与AI工具交流的桥梁，好的提示词可以显著提高AI的输出质量。本章将学习高级提示词工程技巧，帮助你更有效地与AI工具交流。
 
-![提示词工程示意图](/AI-Tutorial/images/chapter8_img4.png)
+![提示词工程示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20advanced%20prompt%20engineering%20with%20AI%20tools%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 提示词的结构与组成
 
@@ -199,7 +199,7 @@ export const chapter8: Chapter = {
 - **风格示例**：提供风格参考示例
 - **结构示例**：提供结构参考示例
 
-![提示词结构示意图](/AI-Tutorial/images/chapter8_img5.png)
+![提示词结构示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20prompt%20structure%20with%20instruction%2C%20context%2C%20constraints%2C%20and%20examples%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 高级提示词技巧
 
@@ -263,7 +263,7 @@ export const chapter8: Chapter = {
 - **重点突出**：突出重要的要求和信息
 - **逻辑连贯**：保持提示词的逻辑连贯性
 
-![提示词优化示意图](/AI-Tutorial/images/chapter8_img6.png)
+![提示词优化示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20prompt%20optimization%20process%20with%20iterative%20improvement%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 不同AI工具的提示词特点
 
@@ -331,7 +331,7 @@ export const chapter8: Chapter = {
 
 AI工具在各个专业领域都有广泛的应用，本章将介绍AI工具在一些主要专业领域的应用案例和最佳实践。
 
-![AI专业应用示意图](/AI-Tutorial/images/chapter8_img7.png)
+![AI专业应用示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20applications%20in%20various%20professional%20fields%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 1. 教育领域
 
@@ -358,7 +358,7 @@ AI工具在教育领域有很多应用，可以帮助教师提高教学效率，
 - **优势**：24/7 availability，个性化回答，即时反馈
 - **应用**：帮助学生解决作业问题，解释复杂概念
 
-![教育领域AI应用示意图](/AI-Tutorial/images/chapter8_img8.png)
+![教育领域AI应用示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20in%20education%20with%20personalized%20learning%20and%20intelligent%20tutoring%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 2. 医疗健康领域
 
@@ -435,7 +435,7 @@ AI工具在市场营销领域的应用正在改变营销策略的制定和执行
 - **优势**：提高营销效果，增加客户转化率
 - **应用**：电商推荐系统，个性化邮件营销
 
-![市场营销AI应用示意图](/AI-Tutorial/images/chapter8_img9.png)
+![市场营销AI应用示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20AI%20in%20marketing%20with%20personalized%20content%20and%20customer%20analysis%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 5. 创意产业
 
@@ -525,7 +525,7 @@ AI工具在法律领域的应用正在改变法律服务的提供方式。
 
 构建个性化的AI工作流可以帮助你更高效地完成各种任务。本章将学习如何构建适合自己需求的AI工作流。
 
-![AI工作流示意图](/AI-Tutorial/images/chapter8_img10.png)
+![AI工作流示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20personal%20AI%20workflow%20with%20different%20tools%20connected%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 工作流设计原则
 
@@ -555,7 +555,7 @@ AI工具在法律领域的应用正在改变法律服务的提供方式。
 - **标准化**：标准化工作流程和输出格式
 - **持续改进**：不断优化工作流程
 
-![工作流设计原则示意图](/AI-Tutorial/images/chapter8_img11.png)
+![工作流设计原则示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20workflow%20design%20principles%20like%20goal%20setting%2C%20tool%20selection%2C%20and%20efficiency%20optimization%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 常见的个人AI工作流
 
@@ -639,7 +639,7 @@ AI工具在法律领域的应用正在改变法律服务的提供方式。
 - **工具更新**：及时更新和替换工具
 - **流程优化**：不断优化工作流程
 
-![工作流实施步骤示意图](/AI-Tutorial/images/chapter8_img12.png)
+![工作流实施步骤示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20workflow%20implementation%20steps%20from%20needs%20analysis%20to%20continuous%20improvement%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 工作流管理工具
 
@@ -723,7 +723,7 @@ AI工具在法律领域的应用正在改变法律服务的提供方式。
 
 了解AI的未来发展趋势可以帮助你更好地适应和利用AI技术。本章将探讨AI的未来发展方向和趋势。
 
-![AI未来趋势示意图](/AI-Tutorial/images/chapter8_img13.png)
+![AI未来趋势示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20future%20AI%20trends%20and%20developments%2C%20futuristic%2C%20colorful%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 1. 多模态AI
 
@@ -741,7 +741,7 @@ AI工具在法律领域的应用正在改变法律服务的提供方式。
 - **内容创作**：生成包含文字、图像、音频的多媒体内容
 - **教育**：提供多模态的学习体验
 
-![多模态AI示意图](/AI-Tutorial/images/chapter8_img14.png)
+![多模态AI示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20multimodal%20AI%20processing%20text%2C%20images%2C%20audio%2C%20and%20video%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 2. 个性化AI
 
@@ -791,7 +791,7 @@ AI工具在法律领域的应用正在改变法律服务的提供方式。
 - **金融**：解释贷款审批和投资建议
 - **法律**：解释法律决策和建议
 
-![可解释AI示意图](/AI-Tutorial/images/chapter8_img15.png)
+![可解释AI示意图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=illustration%20showing%20explainable%20AI%20with%20decision%20process%20visualization%2C%20educational%20style&image_size=landscape_16_9)
 
 ### 5. AI伦理与治理
 

@@ -47,7 +47,17 @@ export const parseMarkdown = (content: string): React.ReactNode => {
         const imgMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
         if (imgMatch) {
           const alt = imgMatch[1];
-          const src = imgMatch[2];
+          let src = imgMatch[2];
+          
+          // 处理图片路径，确保在GitHub Pages上正确显示
+          if (src.startsWith('/images/')) {
+            // 检查是否在GitHub Pages环境中
+            const isGitHubPages = window.location.hostname === 'slowdown87.github.io';
+            if (isGitHubPages) {
+              src = `/AI-Tutorial${src}`;
+            }
+          }
+          
           elements.push(
             <div key={`img-${src}-${i}`} className="my-6">
               <img 
